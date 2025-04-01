@@ -11,9 +11,9 @@
             background-color: #f8f9fa; /* Un color gris suave */
         }
 
-        /* Color de fondo para el formulario */
+        /* Contenedor del formulario */
         .form-container {
-            background-color: #8a2be2; /* Fondo blanco para el formulario */
+            background-color: #ffffff; /* Fondo blanco para el formulario */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -26,6 +26,21 @@
 
         .navbar-brand, .nav-link, .navbar-toggler-icon {
             color: #ffffff !important; /* Asegura que los textos sean blancos */
+        }
+
+        /* Colores para el formulario */
+        .form-label {
+            color: #007bff; /* Color azul para las etiquetas */
+        }
+
+        .btn-outline-primary {
+            border-color: #007bff;
+            color: #007bff;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: white;
         }
     </style>
 </head>
@@ -41,50 +56,5 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Enlace</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Desplegable
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Acción</a></li>
-                            <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Deshabilitado</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+                    <li
 
-    <!-- Contenedor del formulario con color de fondo -->
-    <div class="container mt-4 form-container">
-        <div class="mb-3 row">
-            <label for="staticEmail" class="col-sm-2 col-form-label text-success">Correo electrónico</label>
-            <div class="col-sm-10"> 
-                <input type="text" readonly class="form-control-plaintext bg-light" id="staticEmail" value="email@ejemplo.com">
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Contraseña</label>
-            <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword">
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
